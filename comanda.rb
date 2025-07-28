@@ -1,8 +1,8 @@
 class Comanda < Formula
   desc "Chain of Models and Actions - Command-line LLM orchestration engine"
   homepage "https://github.com/kris-hansen/comanda"
-  url "https://github.com/kris-hansen/comanda/archive/refs/tags/v0.0.62.tar.gz"
-  sha256 "c690e59a4e54825ab7949167f9b54ed8a8f7d25ad78d765b1d9379639bd0c1f6"
+  url "https://github.com/kris-hansen/comanda/archive/refs/tags/v0.0.63.tar.gz"
+  sha256 "64b976f4cfc5fb2c08a31a0c26ad67df57a5f442162b54ae0bc68f88d2a48e65"
   license "MIT"
 
   depends_on "go" => :build
