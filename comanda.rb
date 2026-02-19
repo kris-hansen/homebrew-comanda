@@ -5,21 +5,21 @@
 class Comanda < Formula
   desc "Chain of Models and Actions - declarative LLM workflow orchestration"
   homepage "https://github.com/kris-hansen/comanda"
-  version "0.0.138"
+  version "0.0.139"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.138/comanda-darwin-amd64.tar.gz"
-      sha256 "626b95b8f243cd63eddbb559cdb78b2f241580ec1103bbcde6d4af2ace6df51f"
+      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.139/comanda-darwin-amd64.tar.gz"
+      sha256 "c2a695596d814d65138a61a2df73dde64ce77f5dd1c39ecfeebc5f88faac1394"
 
       def install
         bin.install "comanda"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.138/comanda-darwin-arm64.tar.gz"
-      sha256 "5427da60db0ed97137fb447e27ad1f64207e0815a166c3f32150adaaad7e93ad"
+      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.139/comanda-darwin-arm64.tar.gz"
+      sha256 "de1d770874b993162d8653ef2d3ab60fb55ee70d3a64361856dc8fe0125e4230"
 
       def install
         bin.install "comanda"
@@ -29,15 +29,15 @@ class Comanda < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.138/comanda-linux-amd64.tar.gz"
-      sha256 "8bf0c61d1b23b5879a39fed7a34f80c0ecb05c9004c7ab8862e5761e2f2fdaf4"
+      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.139/comanda-linux-amd64.tar.gz"
+      sha256 "b3e8f8653f31f2a36149937bea88d2807057d359d6ecad37483b707dc86132d5"
       def install
         bin.install "comanda"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.138/comanda-linux-arm64.tar.gz"
-      sha256 "0b9616df5d5c7a94fbd8880a4adce599e5aaf4b0c20c6c1d81cf4727077deda0"
+      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.139/comanda-linux-arm64.tar.gz"
+      sha256 "b8fb7c242da2c53d701887c0352918cf7a805cbead649fb70c2326452fb34d11"
       def install
         bin.install "comanda"
       end
