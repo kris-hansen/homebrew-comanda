@@ -5,21 +5,21 @@
 class Comanda < Formula
   desc "Chain of Models and Actions - declarative LLM workflow orchestration"
   homepage "https://github.com/kris-hansen/comanda"
-  version "0.0.187"
+  version "0.0.188"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.187/comanda-darwin-amd64.tar.gz"
-      sha256 "75e12cde7b42313cc834b90e9689288909f46c5d925c2489737d02af7572836f"
+      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.188/comanda-darwin-amd64.tar.gz"
+      sha256 "a0a1cf9932478ecb0d43dfad6d8959b2f08fc7f112bf4646d5cb1af795f2313a"
 
       define_method(:install) do
         bin.install "comanda"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.187/comanda-darwin-arm64.tar.gz"
-      sha256 "e9e17fcf5fe90d976b7bdc8d57698a7f66580ea9d380b1d9cbb7f44356500807"
+      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.188/comanda-darwin-arm64.tar.gz"
+      sha256 "a14680d6236f24119ce4d13d9e2c6a4c5a8cf0f8332ca3efab0333b7e0645f3a"
 
       define_method(:install) do
         bin.install "comanda"
@@ -29,15 +29,15 @@ class Comanda < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.187/comanda-linux-amd64.tar.gz"
-      sha256 "9e44db8b1ecb12eb5717899329b3160076e8b481dbba81e39b899f2e6247937d"
+      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.188/comanda-linux-amd64.tar.gz"
+      sha256 "cdcca75986b9d92f87efb28a2cb56a751ce04668a683b508d90d1074665aab00"
       define_method(:install) do
         bin.install "comanda"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.187/comanda-linux-arm64.tar.gz"
-      sha256 "43f06b4d7b42c604452e3d36dc55ab8b2a4a8bdfcd62907b4cd24f99d345cc53"
+      url "https://github.com/kris-hansen/comanda/releases/download/v0.0.188/comanda-linux-arm64.tar.gz"
+      sha256 "aed4b896c0de823b258e0106894747f0eb2312bb0bfee1e0da00600e80d36778"
       define_method(:install) do
         bin.install "comanda"
       end
